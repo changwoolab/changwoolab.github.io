@@ -1,2 +1,5 @@
 # changwoolab.github.io
-If you want to get tips of BOJ or withCS, goto https://blog.naver.com/cwyoo01
+Name : Chang Woo Yoo
+School : Korea University (Seoul)
+Major : Computer Science
+Blog : https://blog.naver.com/cwyoo01
