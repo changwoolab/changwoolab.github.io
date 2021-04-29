@@ -7,7 +7,8 @@ Major : Computer Science
 
 Blog : https://blog.naver.com/cwyoo01
 ________________________________________________________________________________
-My Projects
+
+**My Projects
 
 **Notation: My Project*: Link > Introduction of my project (DATE)**
 
