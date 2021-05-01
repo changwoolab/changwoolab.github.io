@@ -5,7 +5,7 @@ School : Korea University (Seoul)
 
 Major : Computer Science
 
-Blog : https://blog.naver.com/cwyoo01
+Blog : <https://blog.naver.com/cwyoo01>
 
 ________________________________________________________________________________
 
