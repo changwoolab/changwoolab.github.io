@@ -1,0 +1,37 @@
+# Build settings
+gems:
+  - jemoji
+  - jekyll-paginate
+
+# Site settings
+title: "changwoolab"
+description: > # this means to ignore newlines until "email:"
+  changwoolab's blog
+
+# email: a-mail@mail.mail
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+float_logo: true # true, false (default)
+
+# blog cover
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+
+name: "Dirk Fabisch"
+author: "Dirk Fabisch"
+author_image: "/assets/images/author.jpg"
+
+paginate: 5
+
+url: "https://changwoolab.github.io/" # the base hostname & protocol for your site
+baseurl: ""
+
+#fill in disqus shortname to use disqus
+#disqus: disqus-shortname
+
+#google_analytics: UA-XXXXX-X
+
+# social icons and sharing options
+social:
+  - icon: github
+    url: https://github.com/changwoolab
+    desc: changwoolab
