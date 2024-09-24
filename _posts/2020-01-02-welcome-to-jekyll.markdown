@@ -1,29 +1,45 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-01-02 19:31:29 +0900
+title: "Welcome to Jekyll!"
+date: 2020-01-02 19:31:29 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+## The Impact of AlexNet
 
-`YEAR-MONTH-DAY-title.MARKUP`
+- Shows the possibility of “DEEP & LARGE” convolutional neural network that it could results in high quality precision
+  - “DEPTH is important for achieving results”
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Architecture
 
-Jekyll also offers powerful support for code snippets:
+![Image Alt 텍스트](/public/img/alexnet.png)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Reducing Overfitting
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+1. **Data Augmentation**
+   1. Extracting random 224 x 224 patches from 256 x 256 images
+   2. Altering intensities of RGB channels (Perform PCA on RGB pixel values)
+   - Computationally free → Compute on CPU while training on GPU
+2. **Dropout**
+   - Reason why Dropout reduces overfitting
+     - → Reduces complex co-adaptations of neurons because **a neuron cannot rely on the presence of particular other neurons**
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Questions
+
+모델의 성능을 높이는 데에 데이터 양도 중요하다고하고, 오버피팅을 줄이는 데에도 데이터 양이 중요하다고 하는데, 정확하게 데이터 양과 bias / Variance 의 관계를 잘 모르겠음
+
+### 일반적으로
+
+- **Bias = 모델 자체의 복잡성과 관련 있음. 모델이 복잡할수록 복잡한 패턴을 잡아낼 수 있음**
+  - 데이터가 증가해도 분포가 같으면, 해당 데이터를 통해 학습할 수 있는 패턴이 그대로이므로,
+    같은 모델을 썼을 때 Bias는 크게 변하지 않음
+- Variance = 데이터가 많을수록 Generalization을 더 잘하게 됨 → Overfitting 방지
+
+### 하지만 데이터들을 수집하며, 데이터셋의 분포가 변한다면!
+
+- 모델이 더 많은 데이터를 기반으로 다른 패턴을 학습 → Bias 감소 가능!
+
+### Data Augmentation이 Variance를 줄이는 이유
+
+Cropping하고, Altering intensities of RGB Channels 해도 **해당 이미지의 “근본적인 패턴”은 변하지 않음.**
+따라서 Augmentation은 같은 분포이지만 다른 Data 양을 늘려주므로, Variance를 줄여 Overfitting 방지
