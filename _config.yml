@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "https://changwoolab.github.io"
+baseurl: ""
 url: "https://changwoolab.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
