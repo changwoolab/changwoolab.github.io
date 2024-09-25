@@ -90,14 +90,18 @@ code {
 .container {
   min-height: 100%;
   display: flex;
-  justify-content: space-between;
   flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  flex: 1 1 auto;
+  padding: 0px 30px;
 }
 
 .content {
-  /*margin-left: 180px;*/
-  flex: 1 1 auto;
-  padding: 0px 30px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 900px;
 }
 
@@ -247,11 +251,6 @@ blockquote {
   padding-left: 10px;
   margin: 0;
   margin-bottom: 15px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 article h1,
