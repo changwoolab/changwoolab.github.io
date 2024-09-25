@@ -46,7 +46,7 @@ Uses CNN features that contains only “style” or “content” representation
 
 ### Style Loss
 
-- **Style** = Correlation between feature map channels of the layer
+- **Style** = Correlation between feature map channels of the layer    
 Why use correlation? → To remove pixel value’s impact and get real style!
     - Represented by: Gram Matrix (G)
     ( inner product between vectorized feature map *i, j* in layer *l* )
