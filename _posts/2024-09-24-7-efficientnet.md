@@ -13,11 +13,14 @@ This paper propose **compound coefficient** which uniformly scales all dimension
 ɑ, β, 𝛾 are constants determined by a small grid search
 
 $$
-depth: d = ɑ^ϕ\\ width:w=β^ϕ \\ resolution:r=𝛾^ϕ
+depth: d = ɑ^ϕ\\
+width:w=β^ϕ\\
+resolution:r=𝛾^ϕ
 $$
 
 $$
-ɑ·β·𝛾≈2 \\ ɑ≥1, β≥1, 𝛾≥1
+ɑ·β·𝛾≈2\\
+ɑ≥1, β≥1, 𝛾≥1
 $$
 
 **Compund scaling method**
@@ -50,8 +53,8 @@ $$
 When
 
 $$
-N(d,w,r)=\bigodot_{i=1..s}\hat{F}^{d·\hat{L}_i}(X_{r·\hat{H}_i\ ,\  r·\hat{W}_i \ ,\ w·\hat{C}_i}) \\
-Memory(N) ≤ target\_memory \\
+N(d,w,r)=\bigodot_{i=1..s}\hat{F}^{d·\hat{L}_i}(X_{r·\hat{H}_i\ ,\  r·\hat{W}_i \ ,\ w·\hat{C}_i})\\
+Memory(N) ≤ target\_memory\\
 FLOPS(N) ≤ target\_flops
 $$
 
