@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Paper Review 18: A Neural Algorithm of Artistic Style"
-date: 2024-09-24 19:55:29 +0900
+date: 2024-09-23 19:55:29 +0900
 categories: paper-review
 ---
 

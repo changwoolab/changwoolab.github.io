@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Paper Review 7: EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks"
-date: 2024-09-24 19:44:29 +0900
+date: 2024-08-15 19:44:29 +0900
 categories: paper-review
 ---
 ## 1. Summary
