@@ -38,5 +38,7 @@ plugins:
 category_dir: category/
 tag_dir: tag/
 
-kramdown:
-  math_engine: katex
+markdown: kramdown
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
